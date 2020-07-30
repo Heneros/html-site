@@ -4,8 +4,31 @@ html, body{
     height: 100%;
 }
 body {
-    /* font-family: 'Open Sans', sans-serif; */
     font: 16px / 1.42em 'Open Sans', sans-serif;
+    color: #221122;
+    background: #fcf5e6;
+}
+:root{
+    --yellow: #ffc92f;
+    --red: #d82727;
+    --black: #1b1b1b;
+
+}
+.wrapper{
+    overflow: hidden;
+    min-width: 1310px;
+}
+.container{
+    margin: 0 auto;
+    width: 1300px;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul>li {
+list-style: none;
 }
 
 .hero{
@@ -13,18 +36,19 @@ body {
     min-height: 650px;
     background: url("../img/bg/hero.jpg") center center / cover no-repeat;
     position: relative;
+    margin-bottom: 130px;
 }
 .header{
     width: 1290px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-top: 27px;
 }
 .logo{
    color: black;
    text-decoration: none; 
-   cursor: pointer;
-   font-size: 36px;
    font-weight: 500;
 }
 .logo:hover{
@@ -34,19 +58,18 @@ body {
     text-decoration: none;
     text-align: center;
     font-size: 16px;
-    color: #221122;
+    color: inherit;
 }
 .mail__title{
    margin-bottom: 3px;
 }
 .mail__content{
-    background-color: #221122;
+    background-color: inherit;
     color: #ffbc2f;
     font-size: 16px;
     padding: 5px 10px;
 }
-
-.fade-slider {
+.hero__content{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -55,7 +78,96 @@ body {
     height: 72%;
 }
 
-.fade-slider__item{
-  background: url("../img/hero/slider_pic_1.png") center center / contain no-repeat;  
-  height: 100% ;
+.fade-slider {
+    width: 100%;
+    height: 100%;
+  }
+  
+.fade-slider__item {
+    background: center center / contain no-repeat;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity .3s;
+    
 }
+.fade-slider__item--visible {
+    opacity: 1;
+  }
+
+
+  .fade-slider__item--style-tshirts {
+    background-image: url("../img/hero/slider_pic_1.png");
+  }
+  
+  .fade-slider__item--style-tshirts .fade-slider__text {
+    left: 50%;
+    top: 50%;
+    transform: translateX(-164%) translateY(-52%);
+  }
+  
+  .fade-slider__item--style-games {
+    background-image: url("../img/hero/slider_pic_2.png");
+  }
+  
+  .fade-slider__item--style-games .fade-slider__text {
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
+  
+  .fade-slider__item--style-games .lined-text {
+    align-items: center;
+  }
+  
+  .fade-slider__item--style-presents {
+    background-image: url("../img/hero/slider_pic_3.png");
+  }
+  
+  .fade-slider__item--style-presents .fade-slider__text {
+    left: 0;
+    bottom: 0;
+    transform: translateY(-120%);
+  }
+  
+  .fade-slider__item--style-presents .lined-text {
+    align-items: center;
+  }
+  
+  .fade-slider__text {
+    position: absolute;
+  }
+
+  .lined-text {
+    font-family: "alegreya", Arial, sans-serif;
+    color: #fff;
+    font-size: 63px;
+    text-transform: uppercase;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+  } 
+  .lined-text__word {
+    background: #000;
+    padding: 0 17px 8px;
+    margin-top: -7px;
+    white-space: nowrap;
+  }
+  
+  .lined-text__word--color-yellow {
+    color: var(--yellow);
+  }
+  
+  .lined-text__word:nth-child(2n) {
+    margin-left: 8px;
+  }
+  
+  .lined-text--no-indent .lined-text__word {
+    margin-left: 0;
+  }
