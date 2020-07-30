@@ -3,71 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>T-shirt magazine</title>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body> 
-    <div class="wrapper">
-        <section class="hero">
-            <header class="header"><a href="" class="logo">
-                <img src="img/logos/logo-main.png" alt="" class="logo__pic">
-            </a>
-            <a href="mailto:example@mail.ru" class="mail">
-                <div class="mail__title">По всем вопросам пишите на:</div>
-                <div class="mail__content">lostemail@gmail.ru</div>
-            </a>
-            <div class="hero__content">
-            <div class="fade-slider">
-                <div class="fade-slider__item">
-                    <div class="fader-slider__ite">
-                        <h1 class="lined-text">
-    <div class="lined-text__word">три</div>
-    <div class="lined-text__word">футболки</div>
-    <div class="lined-text__word">по цене</div>
-    <div class="lined-text__word">двух</div>
-                        </h1>
-                    </div>
-                </div>
+  <div class="wrapper">
+
+    <section class="hero">
+      <header class="header">
+        <a href="" class="logo">
+          <img src="./img/logos/logo-main.png" class="logo__pic" alt="lost shirt logo">
+        </a>
+          <a href="mailto:lostinspace@mail.ru" class="mail">
+            <div class="mail__title">По всем вопросам пишите на:</div>
+            <div class="mail__content">lostinspace@mail.ru</div>
+          </a>
+      </header>
+      <div class="hero__content">
+        <ul class="fade-slider">
+          <li class="fade-slider__item fade-slider__item--style-tshirts fade-slider__item--visible">
+            <div class="fade-slider__text">
+              <h1 class="lined-text">
+                <span class="lined-text__word">три</span>
+                <span class="lined-text__word">футболки</span>
+                <span class="lined-text__word lined-text__word--color-yellow"
+                    >по цене</span>
+                <span class="lined-text__word lined-text__word--color-yellow"
+                    >двух</span>
+              </h1>
             </div>
-            </header>
-            <div class="hero__content">
-                <ul class="fade-slider">
-                  <li class="fade-slider__item fade-slider__item--style-tshirts fade-slider__item--visible">
-                    <div class="fade-slider__text">
-                      <h1 class="lined-text">
-                        <span class="lined-text__word">три</span>
-                        <span class="lined-text__word">футболки</span>
-                        <span class="lined-text__word lined-text__word--color-yellow"
-                            >по цене</span>
-                        <span class="lined-text__word lined-text__word--color-yellow"
-                            >двух</span>
-                      </h1>
-                    </div>
-                  </li>
-                  <li class="fade-slider__item fade-slider__item--style-games ">
-                    <div class="fade-slider__text">
-                      <h1 class="lined-text lined-text--no-indent">
-                        <span class="lined-text__word">Любимые игры</span>
-                        <span class="lined-text__word lined-text__word--color-yellow">на лучших футболках</span>
-                      </h1>
-                    </div>
-                  </li>
-                  <li class="fade-slider__item fade-slider__item--style-presents">
-                    <div class="fade-slider__text">
-                      <h1 class="lined-text lined-text--no-indent">
-                        <span class="lined-text__word">Подарки</span>
-                        <span class="lined-text__word lined-text__word--color-yellow">для любимых</span>
-                      </h1>
-                    </div>
-                  </li>
-                </ul>
+          </li>
+          <li class="fade-slider__item fade-slider__item--style-games ">
+            <div class="fade-slider__text">
+              <h1 class="lined-text lined-text--no-indent">
+                <span class="lined-text__word">Любимые игры</span>
+                <span class="lined-text__word lined-text__word--color-yellow">на лучших футболках</span>
+              </h1>
             </div>
-              </div>
-        </section>
-    </div><!--wrapper ends-->
-    <script src="scripts/fade-slider.js"></script>
+          </li>
+          <li class="fade-slider__item fade-slider__item--style-presents">
+            <div class="fade-slider__text">
+              <h1 class="lined-text lined-text--no-indent">
+                <span class="lined-text__word">Подарки</span>
+                <span class="lined-text__word lined-text__word--color-yellow">для любимых</span>
+              </h1>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <aside class="sidebar">
+        <a href="#" class="sidebar__hamburger">
+          <svg class="sidebar__hamburger-icon">
+            <use xlink:href="./img/icons-sprite.svg#bars"></use>
+          </svg>
+        </a>
+        <div class="sidebar__header">
+          <a href="#" class="logo">
+            <img src="./img/logos/logo-main.png" alt="" class="logo__image">
+          </a>
+            <a href="#" class="sidebar__close">
+              <svg class="sidebar__close-icon">
+                <use xlink:href="./img/icons-sprite.svg#cross"></use>
+              </svg>
+            </a>
+        </div>
+        <nav class="side-menu sidebar__menu">
+          <ul class="side-menu__list">
+            <li class="side-menu__item">
+              <a href="#" class="side-menu__link">Детская коллекция</a>
+            </li>
+            <li class="side-menu__item">
+              <a href="#" class="side-menu__link">Мужская коллекция</a>
+            </li>
+            <li class="side-menu__item">
+              <a href="#" class="side-menu__link">Женская коллекция</a>
+            </li>
+            <li class="side-menu__item">
+              <a href="#" class="side-menu__link">Популярные принты</a>
+            </li>
+            <li class="side-menu__item">
+              <a href="#" class="side-menu__link">Новые принты</a>
+            </li>
+            <li class="side-menu__item">
+              <a href="#" class="side-menu__link">Специальные предложения</a>
+            </li>
+            <li class="side-menu__item">
+              <a href="#" class="side-menu__link">Скоро в продаже</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+    </section>
+
+<script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+<script src="scripts/sidebar-menu.js"></script>
+  <script src="scripts/fade-slider.js"></script>
 </body>
 </html>
