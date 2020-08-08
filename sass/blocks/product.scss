@@ -1,0 +1,211 @@
+.filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+  
+  .filter__item {
+    margin-right: 40px;
+  }
+  
+  .filter__item:last-child {
+    margin-right: 0;
+  }
+  .filter__link{
+    font-family: $titleFont;
+    text-transform: uppercase;
+    padding: 3px 21px;
+    color: $black;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .filter__link:hover {
+    color: $red;
+  }
+  .filter__item--active .filter__link{
+    color: $yellow;
+    background: $black;
+  }
+  
+  .products {
+    margin-bottom: 160px;
+  }
+  .products__list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -28px;
+  }
+  .products__item{
+    width: 303px;
+    height: 386px;
+    background: $yellow;
+    margin-bottom: 35px;
+    margin-left: 28px;
+    position: relative;
+  }
+  .products__price{
+    position: absolute;
+    top: 18px;
+    left: -6px;
+    width: 126px;
+    border-bottom: 45px solid #232323;
+
+    border-left: 5px solid transparent;
+    border-right: 2px solid transparent;
+    transform: rotate(-181deg);
+  }
+  
+  .products__price-amount {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: $titleFont;
+    color: #fff;
+    transform: rotate(181deg);
+    position: absolute;
+    top: 2px;
+    right: 28px;
+  }
+  
+  .products__item--color-black {
+    background: #232323;
+  }
+  
+  .products__item--color-black .products__price {
+    border-bottom-color: $yellow;
+  }
+  
+  .products__item--color-black .products__price-amount {
+    color: #212121;
+  }
+  
+  .products__item--size-double{
+    width: 634px;
+    height: 544px;
+  }
+  
+  .products__content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .products__desc{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 23px 30px;
+    background: rgba(35, 35, 35, .8);
+    font-size: 15px;
+    color: #fff;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(100%);
+  }
+  
+  .products__item:hover .products__desc{
+    transform: translateY(0%);
+  }
+  .products__img{
+    display: block;
+    max-width: 90%;
+    max-height: 100%;
+  }
+  
+  .products__desc-text {
+    text-align: center;
+    margin-bottom: 18px;
+  }
+  .btn {
+    text-transform: uppercase;
+    font-family: $titleFont;
+    font-size: 24px;
+    padding: 2px 30px;
+    background: $black;
+    color: $yellow;
+    display: inline-block;
+    text-decoration: none;
+  }
+  .btn:hover{
+    background: $red;
+    color: #fff;
+  }
+  
+  .collections{
+    margin-bottom: 135px;
+  }
+  
+  .collections__list{
+    display: flex;
+  }
+  
+  .collections__item {
+    min-height: 474px;
+    flex: 1;
+    overflow: hidden;
+    margin-right: 30px;
+    background: url('../img/bg/pattern.png') center center / 500px;
+    position: relative;
+  }
+  
+  .collections__item:before{
+    content: ""; 
+    display: block;
+    position: absolute;
+    height: 176%;
+    width: 60%;
+    top: -17%;
+    left: -18%;
+    background: center center / contain no-repeat;
+  }
+  .collections__item--type-guys:before{
+    background: url('../img/collections/collection_man.png');
+  }
+  
+  .collections__item--type-girls:before{
+    background-image: url('../img/collections/collection_woman.png');
+    top: -31%;
+    width: 80%;
+    left: -25%;
+  }
+  
+  .collections__link {
+    display: block;
+    padding: 74px 13% 74px 44%;
+    text-decoration: none;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+    font-size: 15px;
+    color: inherit;
+  }
+  
+  .collections__link:hover .btn {
+    background: $red;
+    color: #fff;
+  }
+  
+  .collections__title {
+    font-family: $titleFont;
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 11px;
+  }
+  
+  .collections__item:last-child {
+    margin-right: 0;
+  }
+  
+  .collections__desc {
+    margin-bottom: 28px;
+  }
+  

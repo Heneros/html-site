@@ -42,15 +42,18 @@ gulp.task('sass', function () {
         .pipe(plumber())
         .pipe(sass())
         .pipe(cssmin())
-        .pipe(autoprefixer({
-            overrideBrowserslist: [
-                'last 3 versions',
-                // '> 1%', 
-                // 'ie 8', 
-                // 'ie 7'
-        ],
-            cascade: false
-        }))
+
+        .pipe(autoprefixer([
+            'last 15 versions',
+            '> 1%',
+            'ie 8', 
+            'ie 7'
+            ], 
+           { 
+            cascade: true
+         }))
+
+
         .pipe(concat(('style.css')))
     //     .pipe(sourceMaps.write())
         .pipe(gulp.dest('build/css'))

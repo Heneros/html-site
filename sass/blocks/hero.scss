@@ -27,7 +27,7 @@
   
   .mail__content {
     background: #212121;
-    color: var(--yellow);
+    color: $yellow;
     padding: 5px 10px;
   }
   
@@ -55,6 +55,104 @@
   }
 
 
+
+
+  .fade-slider {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .fade-slider__item {
+    background: center center / contain no-repeat;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity .3s;
+  }
+  
+  .fade-slider__item--visible {
+    opacity: 1;
+  }
+  
+  
+  
+  .fade-slider__item--style-tshirts {
+    background-image: url("../img/hero/slider_pic_1.png");
+  }
+  
+  .fade-slider__item--style-tshirts .fade-slider__text {
+    left: 50%;
+    top: 50%;
+    transform: translateX(-164%) translateY(-52%);
+  }
+  
+  .fade-slider__item--style-games {
+    background-image: url("../img/hero/slider_pic_2.png");
+  }
+  
+  .fade-slider__item--style-games .fade-slider__text {
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
+  
+  .fade-slider__item--style-games .lined-text {
+    align-items: center;
+  }
+  
+  .fade-slider__item--style-presents {
+    background-image: url("../img/hero/slider_pic_3.png");
+  }
+  
+  .fade-slider__item--style-presents .fade-slider__text {
+    left: 0;
+    bottom: 0;
+    transform: translateY(-120%);
+  }
+  
+  .fade-slider__item--style-presents .lined-text {
+    align-items: center;
+  }
+  
+  .fade-slider__text {
+    position: absolute;
+  }
+  
+  .lined-text {
+    font-family: "Open Sans", Arial, sans-serif;
+    color: #fff;
+    font-size: 63px;
+    text-transform: uppercase;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+  }
+  
+  
+  .lined-text__word {
+    background: #000;
+    padding: 0 17px 8px;
+    margin-top: -7px;
+    white-space: nowrap;
+  }
+  
+  .lined-text__word--color-yellow {
+    color: $yellow;
+  }
+  
+  .lined-text__word:nth-child(2n) {
+    margin-left: 8px;
+  }
+  
+  .lined-text--no-indent .lined-text__word {
+    margin-left: 0;
+  }
   @media(max-width:1321px){
     .header > img{
        height: auto;
