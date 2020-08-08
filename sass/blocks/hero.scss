@@ -154,15 +154,18 @@
     margin-left: 0;
   }
   @media(max-width:1321px){
-    .header > img{
-       height: auto;
-       width: 140px;
-     }
-     .header{
-       padding: 14px 116px;
-       max-width: 900px;
-       justify-content: center;
-     }
+    .header{
+      padding: 14px 116px;
+      max-width: 900px;
+      justify-content: center;
+      img{
+      height: auto;
+      width: 140px;
+    }
+  } 
+  .hero__content{
+    width: 108%;
+  }
      .mail{
        font-size: 14px;
      }
@@ -179,19 +182,33 @@
    }
    }
      
+   @media(max-width:800px){
+    .lined-text {
+      font-size: 25px;
+    }
+    .fade-slider__item--style-tshirts .fade-slider__text {
+      left: 53%;
+      top: 55%;
+      transform: translateX(-28%) translateY(101%);
+    }
+    .header{
+      justify-content: normal;
+    }
+    
+   }
   
-  @media(max-width:1200px){
-    .hero {
-  width: 100%;
-    }
+  // @media(max-width:1200px){
+  //   .hero {
+  // width: 100%;
+  //   }
   
-    .hero__content{
-      width: 750px;
-    }
-    .wrapper{
-      max-width: 760px;
-    }
-    .lined-text{
-      font-size: 20px;
-    }
-  }
+  //   .hero__content{
+  //     width: 750px;
+  //   }
+  //   .wrapper{
+  //     max-width: 760px;
+  //   }
+  //   .lined-text{
+  //     font-size: 20px;
+  //   }
+  // }
