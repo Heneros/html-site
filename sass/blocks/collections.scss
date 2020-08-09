@@ -70,3 +70,14 @@
   .collections__desc {
     margin-bottom: 28px;
   }
+
+  @media(max-width: 1070px){
+    
+    .collections__list{
+      flex-direction: column;
+    }
+    .collections__item--type-guys{
+      margin-right: 0px;
+      margin-bottom: 25px;
+    }
+  }

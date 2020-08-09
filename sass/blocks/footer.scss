@@ -123,3 +123,13 @@
   }
   
   
+
+  @media(max-width: 670px){
+    .extras{
+      flex-direction: column;
+      .extras__col{
+        margin-right: 0;
+        height: 100px;
+      }
+    }
+  }

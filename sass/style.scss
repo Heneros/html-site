@@ -4,12 +4,14 @@
 @import 'core';
 @import 'variables';  
 @import 'fonts';
-@import 'reset'; 
+@import 'reset';   
 
-   
+     
 @import 'blocks/hero';  
-@import 'blocks/sidebar';  
-@import 'blocks/product';
+@import 'blocks/sidebar';    
+@import 'blocks/product';  
 @import 'blocks/collections';
-@import 'blocks/footer';                         
-           
+@import 'blocks/footer';                           
+                   
+    
+@import 'blocks/product-header';                      
