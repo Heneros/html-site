@@ -42,7 +42,6 @@ gulp.task('sass', function () {
         .pipe(plumber())
         .pipe(sass())
         .pipe(cssmin())
-
         .pipe(autoprefixer([
             'last 15 versions',
             '> 1%',
@@ -55,7 +54,6 @@ gulp.task('sass', function () {
 
 
         .pipe(concat(('style.css')))
-    //     .pipe(sourceMaps.write())
         .pipe(gulp.dest('build/css'))
         .pipe(browserSync.reload({stream: true}));
  
