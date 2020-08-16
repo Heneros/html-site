@@ -21,7 +21,7 @@
         left: 27px;
         width: 494px;
         height: 411px;
-        background: url(../img/tshirts/tshirt_07.png) center center/495px no-repeat;
+        background: url('../img/tshirts/tshirt_07.png') center center/495px no-repeat;
       }
     } 
     .right__container{ 
@@ -59,12 +59,13 @@
     font-size: 19px;
     font-weight: 800;
     color: $yellow;
+    font-family: 'Open Sans';
   }
   .desc{
     text-transform: uppercase;
     font-size: 50px;
     padding-top: 10px;
-  }
+  } 
   .cost{
     background-color: #ffc92f;
     color: #000;
@@ -73,9 +74,68 @@
     padding: 15px;
     width: 82px;
     margin-top: 20px;
-    display: flex;
+    display: flex;  
     justify-content: center;
     
+  } 
+
+} 
+.sizes{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 32px 83px 0px 30px;
+  .active{
+    border: 3px solid #e0d9c8;
+    padding: 18px;
+    &:hover{
+      background-color: $yellow;
+    }
+  }
+  a{
+    text-decoration:none;
+    color: $black;
+    font-weight: 700;
+    font-size: 17px;
+
+  }
+  .inactive{
+    color: #e0d9c8;    
+    pointer-events: none;
+    border: 3px solid #e0d9c8;
+    padding: 18px;
+  }
+
+}
+.colors{
+  display: flex; 
+  justify-content: right;
+  padding: 41px 51px 0px 33px;
+  .shape__color{
+    border-radius: 50%; 
+    // background-color: $black;
+    height: 25px;
+    width: 25px;
+    margin-right: 20px;
+    border: 6px solid #fcf5e6; 
+    &:hover{  
+      padding: 15px;
+      border: 15px solid $yellow;
+    }
+  }
+  .black{
+    background-color: $black;
+  }
+  .beige{
+    background-color: #e0d9c8;
+  }
+  .green{
+    background-color: green;
+  }
+  .blue{
+    background-color: blue;
+  }
+  .red{
+    background-color: $red;
   }
 
 }
