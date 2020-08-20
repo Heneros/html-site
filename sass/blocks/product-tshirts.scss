@@ -1,34 +1,38 @@
 .wrapper__tshirt{
   @include min-max(177px, 1310px, 0);
-}
+
 .product-tshirt{
-    height: 661px;
-    // width: 1100px;
+    height: 750px;
     background-color: $yellow;
     display: flex;
     margin-bottom: 135px;
     .tshirt__list{
       display: flex;
+      flex-wrap: wrap;
     .left__container{
         flex-grow: 1;
         padding-top: 130px;
         min-height: 454px;
         position: relative;
-    &:before{
-        content: "";
-        position: absolute;
-        bottom: 126px;
-        left: 27px;
-        width: 494px;
-        height: 411px;
-        background: url('../img/tshirts/tshirt_07.png') center center/495px no-repeat;
-      }
+        .img__item{
+          position: absolute; 
+          bottom: 126px;
+          left: -285px;
+          width: 550px;
+          height: 447px;
+          display: none;
+
+
+        }
+        .active_class{
+          display: block;
+        }
     } 
     .right__container{ 
         flex-grow: 1;
-        height: 634px;
+        height: 721px;
         position: relative;
-        left: 102%;
+        left: 50%;
         top: 14px;
         width: 643px;
         background: #fcf5e6;
@@ -106,24 +110,24 @@
   }
 
 }
-.colors{
+}///wrapper
+.colors{ 
   display: flex; 
   justify-content: right;
-  padding: 41px 51px 0px 33px;
+  padding:58px 0 0 37px;
   .shape__color{
     border-radius: 50%; 
-    // background-color: $black;
     height: 25px;
-    width: 25px;
+    width: 25px; 
     margin-right: 20px;
-    border: 6px solid #fcf5e6; 
+    border: 6px solid #fff; 
     &:hover{  
-      padding: 15px;
-      border: 15px solid $yellow;
+      border: 5px solid $yellow;
     }
   }
   .black{
     background-color: $black;
+
   }
   .beige{
     background-color: #e0d9c8;
@@ -138,4 +142,107 @@
     background-color: $red;
   }
 
+} 
+.btn__buy{
+  width: 200px;
+  height: 50px; 
+  background-color: $red;    
+  color: #fff ;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  border-style: none;
+  font-family: $titleFont;
+  margin: 20px 0px 0px 36px;
+  letter-spacing: 3px;
+  &:hover {
+    background-color: $black;
+  }
+
 }
+@media(max-width: 1315px){
+  .right__container{
+    max-width: 510px;
+   }
+  .wrapper__tshirt .sizes .active, .wrapper__tshirt .sizes .inactive{
+    padding: 10px;
+  }
+}
+@media(max-width: 1115px){
+  .wrapper__tshirt .product-tshirt .tshirt__list .left__container .img__item{
+    // left: -233px;
+  }
+  .right__container{
+    max-width: 503px;
+   }
+
+} 
+@media(max-width: 1035px){
+  .wrapper__tshirt .product-tshirt .tshirt__list .left__container .img__item{
+    max-width: 519px;
+    left: -7px;
+  }
+
+  .left__container{
+    top: 34px;
+    left: 2px;
+   }
+  .right__container{
+    max-width: 503px;
+   }
+   .wrapper__tshirt .product-tshirt {
+    height: auto;
+    width: auto;
+  }
+  .wrapper__tshirt .product-tshirt .tshirt__list .right__container{
+    left: 2px;
+    top: -59px;
+    max-width: 489px;
+  }
+  .wrapper__tshirt .product-tshirt .tshirt__list{
+    display: inline-block;
+  }
+  .wrapper__tshirt {
+    margin-right: 0%;
+    margin-left: 0%; 
+} 
+} 
+@media(max-width: 885px){
+
+.wrapper__tshirt .container__iformation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+}
+@media(max-width: 560px){
+    
+  .wrapper__tshirt .container__iformation .desc { 
+    font-size: 27px;
+}
+
+.wrapper__tshirt .product-tshirt .tshirt__list .right__container {
+    left: 2px;
+    top: -59px;
+    max-width: 320px;
+}
+.wrapper__tshirt .sizes .active, .wrapper__tshirt .sizes .inactive {
+  padding: 5px;
+}
+
+.wrapper__tshirt .sizes {
+    padding: 23px 53px 0 63px;
+}
+
+.btn__buy{
+  margin: 5px 0px 0px 91px;
+  width: 150px;
+  height: 30px;
+}
+.wrapper__tshirt .product-tshirt .tshirt__list .left__container .img__item {
+  max-width: 350px;
+  max-height: 332px; 
+}
+  }

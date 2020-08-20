@@ -1,18 +1,18 @@
 @charset "UTF-8";
-
-@import 'mixins';
-@import 'core';
-@import 'variables';   
-@import 'fonts';           
-@import 'reset';          
-          
-//index.html     
-@import 'blocks/hero';  
-@import 'blocks/sidebar';          
-@import 'blocks/product';            
-@import 'blocks/collections';          
-@import 'blocks/footer';                                                 
-               
-//product.html                               
-@import 'blocks/product-header';                               
-@import 'blocks/product-tshirts';                                                                                                  
+ 
+@import 'mixins'; 
+@import 'core'; 
+@import 'variables';      
+@import 'fonts';              
+@import 'reset';               
+                      
+//index.html                     
+@import 'blocks/hero';             
+@import 'blocks/sidebar';               
+@import 'blocks/product';                
+@import 'blocks/collections';            
+@import 'blocks/footer';                                                      
+                     
+//product.html                                                
+@import 'blocks/product-header';                                         
+@import 'blocks/product-tshirts';                                                                                                         
