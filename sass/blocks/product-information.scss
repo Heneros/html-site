@@ -1,0 +1,40 @@
+.product-information{
+
+    .filter_link_description{
+        padding: 17px 12px 17px;
+        font-size: 26px;
+        font-weight: bold;
+        text-decoration: none;
+        font-family: $titleFont;
+        text-transform: uppercase;
+        color: $black;
+        &:hover{
+            color: $yellow;
+            background-color: $black;
+        }
+    }  
+.block__description{
+    @include min-max(177px, 1310px, 0);
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    .left__container{
+        max-width: 340px; 
+        li{
+            font-size: 15px;
+            padding: 12px 15px;
+        }
+        .sprite__desc::after{
+            content: "";
+            background: url("../img/icons/washing_01.svg");
+        }
+    }
+    .right__container{
+        max-width: 740px; 
+    }
+
+  
+}
+
+
+}

@@ -1,10 +1,11 @@
 @charset "UTF-8";
- 
-@import 'mixins'; 
-@import 'core'; 
-@import 'variables';      
-@import 'fonts';              
-@import 'reset';               
+//height-border 10px 
+
+@import 'mixins';   
+@import 'core';            
+@import 'variables';           
+@import 'fonts';                      
+@import 'reset';                   
                       
 //index.html                     
 @import 'blocks/hero';             
@@ -15,4 +16,5 @@
                      
 //product.html                                                
 @import 'blocks/product-header';                                         
-@import 'blocks/product-tshirts';                                                                                                         
+@import 'blocks/product-tshirts';   
+@import 'blocks/product-information';                                                                                                           
