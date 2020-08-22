@@ -1,5 +1,4 @@
 .product-information{
-
     .filter_link_description{
         padding: 17px 12px 17px;
         font-size: 26px;
@@ -13,27 +12,86 @@
             background-color: $black;
         }
     }  
+
 .block__description{
     @include min-max(177px, 1310px, 0);
     display: flex;
     justify-content: space-evenly;
+    padding: 48px 35px; 
+    border: 10px solid $yellow;
+    display: none;
     position: relative;
+    hr{
+        position: absolute;
+        width: 1px;
+        height: 309px;
+        right: 67%;
+        top: -8px;
+        color:#e5dece;
+
+    }
     .left__container{
         max-width: 340px; 
         li{
             font-size: 15px;
             padding: 12px 15px;
-        }
-        .sprite__desc::after{
-            content: "";
-            background: url("../img/icons/washing_01.svg");
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            svg{
+                display: block;
+                height: 17px;
+                width: 24px;
+                margin-right: 27px;
+
+            }
         }
     }
     .right__container{
         max-width: 740px; 
+        .description__tshirt{
+            font-size: 18px;
+        }
+    }
+}
+///new block
+.table__information{
+    @include min-max(177px, 1310px, 0);
+    padding: 48px 35px; 
+    border: 10px solid $yellow;
+    position: relative; 
+    display: flex;
+    hr{
+        position: absolute;
+        width: 1px;
+        height: 545px;
+        right: 67%;
+        top: -8px;
+        color:#e5dece; 
+    } 
+    .left__container{
+        max-width: 340px;  
+        padding: 12px 15px; 
+        ol{
+            list-style: inherit; 
+            list-style-type: decimal;
+            li{
+                font-size: 15px;
+                padding: 12px 15px;
+            }
+        }   
+        img{
+            max-width: 252px;
+            padding-bottom: 53px;
+        }
+    }
+    .right__container{
+        max-width: 740px;  
+        table, th, td {
+            border: 3px solid #e5dece;
+          }
     }
 
-  
 }
 
 
