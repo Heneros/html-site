@@ -28,7 +28,6 @@
         right: 67%;
         top: -8px;
         color:#e5dece;
-
     }
     .left__container{
         max-width: 340px; 
@@ -47,29 +46,30 @@
             }
         }
     }
-    .right__container{
+    .right__block{
         max-width: 740px; 
         .description__tshirt{
             font-size: 18px;
         }
     }
 }
-///new block
+///table__information
 .table__information{
     @include min-max(177px, 1310px, 0);
     padding: 48px 35px; 
     border: 10px solid $yellow;
     position: relative; 
-    display: flex;
-    hr{
-        position: absolute;
-        width: 1px;
-        height: 545px;
-        right: 67%;
-        top: -8px;
-        color:#e5dece; 
-    } 
-    .left__container{
+    display: none;
+    height: 600px;
+    // hr{
+    //     position: absolute;
+    //     width: 1px;
+    //     height: 545px;
+    //     right: 67%;
+    //     top: -8px; 
+    //     color:#e5dece; 
+    // }  
+    .left__block{
         max-width: 340px;  
         padding: 12px 15px; 
         ol{
@@ -85,13 +85,53 @@
             padding-bottom: 53px;
         }
     }
-    .right__container{
-        max-width: 740px;  
+    .table__right{
+        // max-width: 740px;  
+        // display: flex;
+        // flex-wrap: wrap;
+        // flex-direction: column; 
+        // justify-content: center;
+        position: relative;
+        bottom: 48px;
+        left: 39px;    
         table, th, td {
             border: 3px solid #e5dece;
           }
+          th, td {
+              padding: 21px;
+          }
+          .table__name{
+              background: #f6efe0;
+
+          }
+
     }
 
+}
+///table block ends
+.express{
+    @include min-max(177px, 1310px, 0);
+    padding: 48px 35px; 
+    border: 10px solid $yellow;
+    position: relative; 
+    display: flex;
+    justify-content: space-evenly;
+    hr{
+        position: absolute;
+        width: 1px;
+        height: 257px;
+        right: 72%;
+        top: -6px;
+        color: #fcf5e6;
+    }
+    .left__express{
+        max-width: 340px;  
+        position: relative;
+        right: 62px;
+    }
+    .right__express{
+        max-width: 740px; 
+    }
 }
 
 
