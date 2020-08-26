@@ -25,11 +25,11 @@ controlls.forEach(function(control){
     });
 });
 })();
-///tshirt colors filter
+///filter blocks product.html
 (function(){
-    const elm = document.querySelector(".colors");
+    const elm = document.querySelector(".product-information");
     const iso = new Isotope(elm, {
-        itemSelector: ".shape__color",
+        itemSelector: ".block__item",
         filter: '.popular'
     });
     
@@ -53,3 +53,5 @@ controlls.forEach(function(control){
         });
     });
     })();
+    
+
