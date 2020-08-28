@@ -1,13 +1,13 @@
 @charset "UTF-8";                      
-               
-   
-@import 'mixins';           
-@import 'core';              
+                 
+     
+@import 'mixins';             
+@import 'core';                                    
 @import 'variables';             
-@import 'fonts';                        
-@import 'reset';                    
-                         
-//index.html                       
+@import 'fonts';                            
+@import 'reset';                             
+                          
+//index.html                        
 @import 'blocks/hero';                   
 @import 'blocks/sidebar';                      
 @import 'blocks/product';                    
@@ -17,4 +17,4 @@
 //product.html                                                
 @import 'blocks/product-header';                                         
 @import 'blocks/product-tshirts';   
-@import 'blocks/product-information';                            
+@import 'blocks/product-information';                             

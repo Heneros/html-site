@@ -1,25 +1,30 @@
-.product-information{
+.filter__item--active {
     .filter_link_description{
-        padding: 17px 12px 17px;
-        font-size: 26px;
-        font-weight: bold;
-        text-decoration: none;
-        font-family: $titleFont;
-        text-transform: uppercase;
-        color: $black;
-        &:hover{
-            color: $yellow;
-            background-color: $black;
-        }
-    }  
-
+        color: $yellow; 
+        background: $black;
+      }
+}
+  .filter_link_description{
+    padding: 17px 12px 17px;
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: $titleFont;
+    text-transform: uppercase;
+    color: $black;
+    &:hover{
+        color: $yellow;
+        background-color: $black;
+    }
+}   
+  
+.main__blocks{
 .block__description{
     @include min-max(177px, 1310px, 0);
     display: flex;
     justify-content: space-evenly;
     padding: 48px 35px; 
     border: 10px solid $yellow;
-    display: none;
     position: relative;
     hr{
         position: absolute;
@@ -29,7 +34,7 @@
         top: -8px;
         color:#e5dece;
     }
-    .left__container{
+    .left__first__block{
         max-width: 340px; 
         li{
             font-size: 15px;
@@ -42,34 +47,29 @@
                 height: 17px;
                 width: 24px;
                 margin-right: 27px;
-
             }
         }
     }
-    .right__block{
-        max-width: 740px; 
+    .right__first__block{
+        max-width: 950px;
+        padding-left: 182px;
+        padding-top: 48px;
         .description__tshirt{
             font-size: 18px;
+ 
         }
     }
 }
 ///table__information
 .table__information{
     @include min-max(177px, 1310px, 0);
+    display: flex;
+    justify-content: space-evenly;
     padding: 48px 35px; 
     border: 10px solid $yellow;
     position: relative; 
-    display: none;
-    height: 600px;
-    // hr{
-    //     position: absolute;
-    //     width: 1px;
-    //     height: 545px;
-    //     right: 67%;
-    //     top: -8px; 
-    //     color:#e5dece; 
-    // }  
-    .left__block{
+    height: 634px;
+    .left__second__block{
         max-width: 340px;  
         padding: 12px 15px; 
         ol{
@@ -86,10 +86,10 @@
         }
     }
     .table__right{
-        // max-width: 740px;  
+        max-width: 740px;  
         // display: flex;
         // flex-wrap: wrap;
-        // flex-direction: column; 
+        // flex-direction: column;  
         // justify-content: center;
         position: relative;
         bottom: 48px;
@@ -117,7 +117,6 @@
     position: relative; 
     display: flex;
     justify-content: space-evenly;
-    display: none;
     hr{
         position: absolute;
         width: 1px;
@@ -132,6 +131,7 @@
         right: 62px;
     }
     .right__express{
+        padding: 48px 35px;
         max-width: 740px; 
     }
  }///table express ends
@@ -140,7 +140,7 @@
     padding: 48px 35px; 
     border: 10px solid $yellow;
     position: relative; 
-    display: flex;
+    display: flex; 
     justify-content: space-evenly;
     hr{
         position: absolute;
@@ -163,5 +163,4 @@
   
  }
 }
-
 

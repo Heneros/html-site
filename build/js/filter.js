@@ -25,15 +25,17 @@ controlls.forEach(function(control){
     });
 });
 })();
+
+
 ///filter blocks product.html
 (function(){
-    const elm = document.querySelector(".product-information");
+    const elm = document.querySelector(".main__blocks");
     const iso = new Isotope(elm, {
         itemSelector: ".block__item",
         filter: '.popular'
     });
     
-    const controlls = document.querySelectorAll(".filter__link");
+    const controlls = document.querySelectorAll(".filter_link_description");
     const activeClass = "filter__item--active";
     
     controlls.forEach(function(control){
