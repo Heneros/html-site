@@ -23,37 +23,39 @@
     @include min-max(177px, 1310px, 0);
     display: flex;
     justify-content: space-evenly;
-    padding: 48px 35px; 
     border: 10px solid $yellow;
     position: relative;
     hr{
         position: absolute;
         width: 1px;
-        height: 309px;
+        height: 299px;
         right: 67%;
         top: -8px;
         color:#e5dece;
     }
     .left__first__block{
         max-width: 340px; 
+        padding: 34px 48px;
         li{
             font-size: 15px;
             padding: 12px 15px;
-            display: flex;
+            display:  inline-flex;
             align-items: center;
             flex-direction: row;
+            &:nth-child(3n){
+               padding-left: 22px;
+            }
             svg{
                 display: block;
                 height: 17px;
-                width: 24px;
+                width: 35px;
                 margin-right: 27px;
             }
         }
     }
     .right__first__block{
         max-width: 950px;
-        padding-left: 182px;
-        padding-top: 48px;
+        padding: 48px 48px;
         .description__tshirt{
             font-size: 18px;
  
@@ -164,3 +166,83 @@
  }
 }
 
+ 
+@media(max-width: 1135px){
+    .main__blocks {
+        .block__description {
+            hr{
+                position: unset;
+                width: 1px;
+                height: 299px;
+                right: 67%;
+                top: -8px;
+                color: #e5dece;
+        }
+      }
+    }
+}
+@media(max-width: 785px){
+  .main__blocks{
+    .block__description{
+        .left__first__block{
+            max-width: 240px; 
+            padding: 34px 48px; 
+    
+            ul{
+ 
+                li{
+                    font-size: 16px;
+                    padding: 12px 15px;
+                    display: -webkit-inline-box;
+                    &:nth-child(3n){
+                       padding-left: 15px;
+                    }
+        
+                }
+            }
+        }
+    }
+  }
+
+
+}
+@media(max-width: 700px){
+    .main__blocks{
+      .block__description{
+          .left__first__block{
+              max-width: 240px; 
+              padding: 34px 48px; 
+      
+              ul{
+   
+                  li{
+                      font-size: 16px;
+                      padding: 12px 15px;
+                      display: -webkit-inline-box;
+                      &:nth-child(3n){
+                         padding-left: 15px;
+                      }
+          
+                  }
+              }
+          }
+          hr{
+              height: 355px;
+          }
+      }
+    }
+    .main__blocks .block__description .right__first__block .description__tshirt {
+        font-size: 17px;
+        text-align: center;
+    }
+  
+  }
+  @media(max-width: 555px){
+.main__blocks .block__description{
+    display: inline-block;
+}
+.main__blocks .block__description hr {
+    height: 1px;
+    width: 400px;
+}
+  }
