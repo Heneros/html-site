@@ -17,7 +17,9 @@
         background-color: $black;
     }
 }   
-  
+.product-information{
+    margin-bottom: 150px;
+}
 .main__blocks{
 .block__description{
     @include min-max(177px, 1310px, 0);
@@ -88,16 +90,12 @@
         }
     }
     .table__right{
-        max-width: 740px;  
-        // display: flex;
-        // flex-wrap: wrap;
-        // flex-direction: column;  
-        // justify-content: center;
         position: relative;
         bottom: 48px;
         left: 39px;    
         table, th, td {
             border: 3px solid #e5dece;
+            height: 20px;
           }
           th, td {
               padding: 21px;
@@ -239,6 +237,7 @@
   }
   @media(max-width: 555px){
 .main__blocks .block__description{
+    border: none;
     display: inline-block;
 }
 .main__blocks .block__description hr {
@@ -246,3 +245,69 @@
     width: 400px;
 }
   }
+
+
+@media(max-width: 1230px){
+   .main__blocks .table__information{
+    height: 655px; 
+      }
+  }
+  @media(max-width: 1170px){
+    .main__blocks .table__information{
+     height: 691px; 
+       }
+   }
+   @media(max-width: 1095px){
+    .main__blocks .table__information{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        padding: 45px 76px;
+        height: auto;
+       }
+       .main__blocks .table__information .table__right {
+         position: relative; 
+         bottom: 0px; 
+         left: 0px; 
+    }
+    .main__blocks .table__information .left__second__block {
+        display: inline-flex;
+    }
+    .main__blocks .table__information .left__second__block ol li {
+        font-size: 17px;
+        white-space: nowrap;
+    }
+   }
+   @media(max-width: 885px){
+
+    .main__blocks .table__information{
+        padding: 0;
+    }
+   }
+   @media(max-width: 785px){
+    .main__blocks .table__information .left__second__block {
+        max-width: 500px;
+    }
+    .main__blocks .table__information .left__second__block ol li {
+        font-size: 14px;
+        white-space: unset;
+    }
+
+    .main__blocks .table__information .left__second__block ol {
+        padding-top: 35px;
+    }
+   }
+   @media(max-width: 750px){
+    .main__blocks .table__information .table__right td, .main__blocks .table__information .table__right th {
+        padding: 5px;
+    }
+    .main__blocks .table__information {
+        padding: 50px;
+    }
+   }
+   @media (max-width: 585px){
+    .main__blocks .table__information {
+        padding: 0px; 
+    }
+   }
