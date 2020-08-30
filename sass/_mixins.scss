@@ -5,3 +5,11 @@
     box-sizing: border-box;
     margin: 0 auto;
   }
+@mixin hr($height, $top){
+    position: absolute;
+    width: 1px;
+    height: $height;
+    right: 72%;
+    top: $top;
+    color: #fcf5e6;
+  }

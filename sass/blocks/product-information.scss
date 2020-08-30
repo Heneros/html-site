@@ -27,17 +27,12 @@
     justify-content: space-evenly;
     border: 10px solid $yellow;
     position: relative;
-    hr{
-        position: absolute;
-        width: 1px;
-        height: 299px;
-        right: 67%;
-        top: -8px;
-        color:#e5dece;
+    hr{ 
+        @include hr(324px, -8px);
     }
     .left__first__block{
         max-width: 340px; 
-        padding: 34px 48px;
+        padding: $paddingInformation;  
         li{
             font-size: 15px;
             padding: 12px 15px;
@@ -57,7 +52,7 @@
     }
     .right__first__block{
         max-width: 950px;
-        padding: 48px 48px;
+        padding: $paddingInformation;  
         .description__tshirt{
             font-size: 18px;
  
@@ -69,7 +64,7 @@
     @include min-max(177px, 1310px, 0);
     display: flex;
     justify-content: space-evenly;
-    padding: 48px 35px; 
+    padding: $paddingInformation;  
     border: 10px solid $yellow;
     position: relative; 
     height: 634px;
@@ -112,27 +107,20 @@
 ///table express starting
 .express{
     @include min-max(177px, 1310px, 0);
-    padding: 48px 35px; 
-    border: 10px solid $yellow;
-    position: relative; 
     display: flex;
     justify-content: space-evenly;
+    border: 10px solid $yellow;
+    position: relative;
     hr{
-        position: absolute;
-        width: 1px;
-        height: 257px;
-        right: 72%;
-        top: -6px;
-        color: #fcf5e6;
+        @include hr(257px, -6px);
     }
     .left__express{
+        padding: $paddingInformation;  
         max-width: 340px;  
-        position: relative;
-        right: 62px;
     }
     .right__express{
-        padding: 48px 35px;
-        max-width: 740px; 
+        padding: 75px 0px 41px 162px;
+        max-width: 950px;
     }
  }///table express ends
  .description__logo{ 
