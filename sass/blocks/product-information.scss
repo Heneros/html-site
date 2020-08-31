@@ -111,48 +111,48 @@
     justify-content: space-evenly;
     border: 10px solid $yellow;
     position: relative;
+    padding: $paddingInformation;  
     hr{
         @include hr(257px, -6px);
     }
     .left__express{
-        padding: $paddingInformation;  
+        position: relative;
+        left: 48px;
         max-width: 340px;  
     }
     .right__express{
-        padding: 75px 0px 41px 162px;
+        padding: 13px 0 41px 218px;
         max-width: 950px;
     }
  }///table express ends
- .description__logo{ 
+ .description__harley{ 
     @include min-max(177px, 1310px, 0);
-    padding: 48px 35px; 
     border: 10px solid $yellow;
-    position: relative; 
-    display: flex; 
-    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height:200px;
     hr{
-        position: absolute;
-        width: 1px;
-        height: 206px;
-        right: 72%;
-        top: -6px;
-        color: #fcf5e6;
+        @include hr(178px, -7px);
+    } 
+  .left__harley{
+    max-width: 340px;  
+    position: relative;
+    left: 77px;
+    top: 60px;
+    img{
+        max-width: 225px; 
+        max-height: 56px;   
     }
-        .left__logo__description{
-        max-width: 340px;  
-        img{
-        max-width: 252px;
-        padding-bottom: 53px;
-      }
-     }
-     .right__logo__description{
-        max-width: 740px; 
-    }
-  
+  }
+  .right__harley{
+    max-width: 950px;
+    padding: 50px 0 41px 218px;
+
  }
 }
-
- 
+}
+ ////media
 @media(max-width: 1135px){
     .main__blocks {
         .block__description {
@@ -299,3 +299,83 @@
         padding: 0px; 
     }
    }
+   @media (max-width: 1195px){
+    .main__blocks .express hr {
+        top: auto;
+        bottom: 2px;
+    }
+   }
+   @media (max-width: 1075px){
+    .main__blocks .express hr {
+        bottom: 169px;
+        right: 108px;
+        height: 1px;
+        width: 812px;
+    }
+    .main__blocks .express .right__express {
+         padding:  0px; 
+         width: auto;
+         text-align: center;  
+    }
+    .main__blocks .express {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-items: center;
+
+    }
+    .main__blocks .express .left__express {
+        display: flex;
+        justify-content: center;
+        padding: 35px;
+        max-width: inherit;
+        margin-right: 125px;
+        margin-bottom: 35px;
+    }
+   }
+   @media (max-width: 758px){
+    .main__blocks .express hr {
+         display: none; 
+    }
+   }
+   @media (max-width: 478px){
+    .main__blocks .express {
+        border: none;
+    }
+   }
+   @media (max-width: 400px){
+    .main__blocks .express .right__express  {
+        font-size: 14px;
+        text-align: left;
+        max-width: 350px;
+    }
+   }
+@media(max-width: 1130px){
+    .main__blocks .description__harley{
+        display: flex; 
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 29vh;
+    }
+    .main__blocks .description__harley hr {
+        top: 101px;
+        right: 0px;
+        height: 1px;
+        min-width: 1073px;
+    }
+    .main__blocks .description__harley .right__harley{
+        padding: 24px 62px;
+        text-align: center;
+    }
+    .main__blocks .description__harley .left__harley{
+        padding-left: 32%;
+        padding-bottom: 8%;
+        top: 46px;
+    }
+
+}
+@media(max-width: 745px){
+    .main__blocks .description__harley .left__harley {
+        padding-left: 25%;
+    }
+}
