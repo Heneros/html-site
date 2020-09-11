@@ -19,7 +19,7 @@
   "homepage": "https://github.com/Heneros/html-site#readme",
   "dependencies": {
     "browser-sync": "^2.26.12",
-    "css-loader": "^4.2.0",
+    "css-loader": "^4.3.0",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-cheerio": "^1.0.0",
@@ -33,7 +33,7 @@
     "gulp-svgmin": "^3.0.0",
     "imagemin-jpeg-recompress": "^7.0.0",
     "imagemin-jpegtran": "^7.0.0",
-    "imagemin-pngquant": "^9.0.0",
+    "imagemin-pngquant": "^9.0.1",
     "normalize.css": "^8.0.1",
     "run-sequence": "^2.2.1"
   },
