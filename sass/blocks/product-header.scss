@@ -7,6 +7,7 @@
 .wrapper__header{
     @include min-max(177px, 1544px, 0);
 }
+
     .header-product{
         display: flex;
         justify-content: space-between;
@@ -30,6 +31,11 @@
             margin: 0;
             position: relative;
             left: 14%;
+          }
+          .mail__product {
+            text-decoration: none;
+            text-align: center;
+            color: inherit;
           }
     }
 
@@ -75,7 +81,7 @@
     } 
 }
 @media (max-width: 700px){
-    .logo {
+    .logo__product {
         padding-right: 0px; 
         img{
             width: 100px;
@@ -86,7 +92,7 @@
     .hero-product {
         min-height: 250px;
     }
-    .mail {
+    .mail__product {
         position: absolute;
         top: 78%;
         left: 50%;
