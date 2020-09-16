@@ -81,3 +81,36 @@
       margin-bottom: 25px;
     }
   }
+
+  @media(max-width: 500px){
+    .collections__title{
+      font-size: 40px;
+    }
+    .fade-slider__item--style-presents {
+      .fade-slider__text {
+        bottom: 66px;
+        right: 46%;
+      }
+    }
+    .lined-text {
+      font-size: 20px;
+  }
+  }
+  @media(max-width: 750px){
+    .fade-slider__item--style-presents {
+      .fade-slider__text {
+        left: 40%;
+      }
+    }
+  }
+@media(max-width: 785px){
+  .fade-slider__item--style-games{
+    .fade-slider__text{
+      bottom: 85px;
+      .lined-text {
+        font-size: 17pxx;
+    }
+    }
+
+  }
+}

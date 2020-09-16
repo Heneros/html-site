@@ -129,11 +129,12 @@
     @include min-max(177px, 1310px, 0);
     border: 10px solid $yellow;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    height:200px;
+    justify-content: space-evenly;
+    // flex-direction: row;
+    // flex-wrap: nowrap;
+    // height:200px;
     hr{
-        @include hr(178px, -7px);
+        @include hr(153px, -9px);
     } 
   .left__harley{
     max-width: 340px;  
@@ -353,9 +354,10 @@
 @media(max-width: 1130px){
     .main__blocks .description__harley{
         display: flex; 
-        flex-direction: row;
+        flex-direction: row; 
         flex-wrap: wrap;
-        height: 29vh;
+        justify-content: space-around;
+        height: auto;
     }
     .main__blocks .description__harley hr {
         top: 101px;
@@ -368,7 +370,7 @@
         text-align: center;
     }
     .main__blocks .description__harley .left__harley{
-        padding-left: 32%;
+        left:0;
         padding-bottom: 8%;
         top: 46px;
     }
@@ -377,5 +379,34 @@
 @media(max-width: 745px){
     .main__blocks .description__harley .left__harley {
         padding-left: 25%;
+    }
+}
+@media(max-width: 650px){
+    .main__blocks {
+        .description__harley {
+            justify-content: flex-start;
+            .left__harley {
+                left: 12%;
+            }
+        }
+        
+    }
+    
+}
+@media(max-width: 545px){
+    .main__blocks .description__harley .left__harley img {
+        max-width: 153px;
+    }
+    .main__blocks .description__harley hr{
+        display: none;
+    }
+}
+@media(max-width: 400px){
+    .main__blocks .description__harley{
+        border: none;
+        .left__harley{
+            left: 5%;
+            padding-bottom: 15%;
+        }
     }
 }
