@@ -13,7 +13,7 @@
        }
        slides[index].classList.add(activeClass);
 
-   }, 15000)
+   }, 3000)
 
 
 }()); 

@@ -1,4 +1,3 @@
-
   .collections{
     margin-bottom: 135px;
   }
@@ -27,7 +26,7 @@
     background: center center / contain no-repeat;
   }
   .collections__item--type-guys:before{
-    background: url('../img/collections/collection_man.png');
+    background: url('../img/collections/collection_man.png')center center/contain no-repeat;
   }
   
   .collections__item--type-girls:before{
